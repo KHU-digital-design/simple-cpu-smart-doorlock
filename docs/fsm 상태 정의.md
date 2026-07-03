@@ -1,6 +1,8 @@
+# CPU FSM 상태 정의
+
 4 사이클 고정 시스템
 
-bram read ratency가 존재 -> 해당 레이턴시가 있는 상태에서 4사이클 고정 시스템을 구현하기 위해선
+bram read latency가 존재 -> 해당 레이턴시가 있는 상태에서 4사이클 고정 시스템을 구현하기 위해선
 
 시스템 클럭을 125MHz보다 낮출 필요가 있음
 
@@ -20,7 +22,7 @@ fetch->decode->execute->increment
 
 ### fetch state 00
 
-PC 값을 bram 주소 포트에 인가하여 령어를 bram에 요청
+PC 값을 bram 주소 포트에 인가하여 명령어를 bram에 요청
 
 ### decode state 01
 
